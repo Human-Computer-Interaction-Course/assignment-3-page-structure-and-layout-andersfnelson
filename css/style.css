@@ -9,6 +9,13 @@ Complementary red: #A2515D
 In the interest of keeping things simple, the header and footer will have the red accent, and the body and the 
 areas outside of the main container will use the gray.  Fonts look good in black on these colors, and using white for button outlines provides some good contrast.
 */
+
+/* 
+For font, I looked at global web-safe fonts and chose to go with the Georgia font.  I like how it looks, 
+and it seems to be compatible with all major browsers.
+I played around with the font sizes for h1 and h2, since those are the headings I am using on this page.
+I settled on 2em for h1 and 1.5 em for h2.  I also used bold font weight for h1.
+*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,9 +36,13 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+/* The global font declaration below:
+Using a slightly larger font size here just for readability of button text
+*/
 body{
     background-color: #8F7377;
     font-family: Georgia, serif;
+    font-size: 1.1em;
 }
 #content{
     margin: auto;
@@ -106,7 +117,7 @@ body{
 .top_button{
     border: 1px solid white;
     border-radius: 5px;
-    width: 100px;
+    width: 105px;
     margin: 10px;
 }
 .bottom_button{
@@ -131,9 +142,26 @@ body{
     opacity: 1;
 } */
 h1{
-    font-size: larger;
+    font-size: 2em;
     font-weight: bold;
 }
 h2{
-    font-size: large;
+    font-size: 1.5em;
+}
+h3{
+    font-size: 1.3em;
+}
+th, td{
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+#people_table{
+    margin: auto;
+    border: 1px solid black;
+    padding: 5px;
+    color: black;
+}
+.name{
+    font-weight: bold;
 }
